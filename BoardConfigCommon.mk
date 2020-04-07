@@ -133,6 +133,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(PLATFORM_PATH)
 
 # SELinux
 #include device/qcom/sepolicy-legacy/sepolicy.mk
+TARGET_EXCLUDE_QCOM_SEPOLICY := true
 BOARD_SEPOLICY_DIRS += \
     $(PLATFORM_PATH)/sepolicy_tmp
 
