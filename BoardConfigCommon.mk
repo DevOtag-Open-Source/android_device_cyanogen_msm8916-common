@@ -105,6 +105,9 @@ TARGET_KERNEL_SOURCE := kernel/cyanogen/msm8916
 
 # Manifest
 DEVICE_MANIFEST_FILE := $(PLATFORM_PATH)/manifest.xml
+ifeq ($(TARGET_USE_CRYPTFS_HW),true)
+DEVICE_MANIFEST_FILE += $(PLATFORM_PATH)/cryptfs_hw.xml
+endif
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true

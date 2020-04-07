@@ -87,8 +87,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service
 
 # Encryption
+ifeq ($(TARGET_USE_CRYPTFS_HW),true)
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+endif
 
 # FM
 PRODUCT_PACKAGES += \
