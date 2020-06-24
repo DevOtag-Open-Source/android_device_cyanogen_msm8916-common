@@ -247,6 +247,13 @@ else ifeq ($(TARGET_BOARD_PLATFORM_VARIANT),msm8916)
 $(call inherit-product, device/cyanogen/msm8916-common/system_prop_msm8916.mk)
 endif
 
+# Thermal HAL
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.msm8916
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
+
 # Trust HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
