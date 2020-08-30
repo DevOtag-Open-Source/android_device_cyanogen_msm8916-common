@@ -23,6 +23,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bluetooth.sap=true \
     ro.qualcomm.bt.hci_transport=smd
 
+# Dalvik
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.minidebuginfo=false \
+    dalvik.vm.dex2oat-minidebuginfo=false
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.enable.sglscale=1 \
