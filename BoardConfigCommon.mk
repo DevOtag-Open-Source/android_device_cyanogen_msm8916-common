@@ -155,9 +155,11 @@ BOARD_SEPOLICY_DIRS += \
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
+    /system/vendor/lib64/mediadrm/libwvdrmengine.so|libshims_drm.so \
     /system/vendor/lib64/libflp.so|libshims_flp.so \
     /system/vendor/lib64/libizat_core.so|libshims_get_process_name.so \
     /system/vendor/lib64/libril-qc-qmi-1.so|libshims_ril.so \
+    /system/vendor/lib/mediadrm/libwvdrmengine.so|libshims_drm.so \
     /system/vendor/lib/libflp.so|libshims_flp.so \
     /system/vendor/lib/libizat_core.so|libshims_get_process_name.so \
     /system/vendor/lib/libril-qc-qmi-1.so|libshims_ril.so
