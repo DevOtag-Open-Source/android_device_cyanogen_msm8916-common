@@ -72,6 +72,11 @@ PRODUCT_PACKAGES += \
 # Boot Animtion
 TARGET_BOOTANIMATION_HALF_RES := true
 
+# Build libhwbinder/libhidltransport
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhwbinder
+
 # Display
 PRODUCT_PACKAGES += \
     gralloc.msm8916 \
