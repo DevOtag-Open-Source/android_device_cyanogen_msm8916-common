@@ -216,7 +216,7 @@ endif
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service
+    android.hardware.power-service-qti
 
 # Radio
 PRODUCT_PACKAGES += \
