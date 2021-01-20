@@ -260,6 +260,10 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
 
+# VNDK
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v28/arm64/arch-arm-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite-v28.so
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     libwcnss_qmi \
