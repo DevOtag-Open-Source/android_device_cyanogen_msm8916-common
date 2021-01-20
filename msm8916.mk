@@ -77,6 +77,10 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhwbinder
 
+# Disable psi monitors
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lmk.use_psi=false
+
 # Display
 PRODUCT_PACKAGES += \
     gralloc.msm8916 \
