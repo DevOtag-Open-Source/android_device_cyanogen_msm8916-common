@@ -18,6 +18,16 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
+    drm/drm.c
+
+LOCAL_MODULE := libshims_drm
+LOCAL_MODULE_TAGS := optional
+
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := \
     flp/flp.c
 
 LOCAL_MODULE := libshims_flp
