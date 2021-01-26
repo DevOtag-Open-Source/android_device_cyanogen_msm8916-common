@@ -36,6 +36,10 @@ on early-init
     # Turn off backlight on blank
     write /sys/class/leds/lcd-backlight/trigger "backlight"
 
+    # Make magisk workable
+    symlink /system/bin /sbin
+    export PATH /sbin:/vendor/bin:/system/bin
+
 on fs
     wait /dev/block/platform/soc.0/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc.0/${ro.boot.bootdevice} /dev/block/bootdevice
