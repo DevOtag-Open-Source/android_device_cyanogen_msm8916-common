@@ -132,8 +132,8 @@
     <!-- Should the pinner service pin the Home application? -->
     <bool name="config_pinnerHomeApp">true</bool>
 
-    <!-- Disable rounded corners on windows to improve graphics performance -->
-    <bool name="config_supportsRoundedCornersOnWindows">false</bool>
+    <!-- Enable support for rounded corners -->
+    <bool name="config_supportsRoundedCornersOnWindows">true</bool>
 
     <!-- The list of components which should be automatically disabled for a specific device. -->
     <string-array name="config_deviceDisabledComponents" translatable="false">
