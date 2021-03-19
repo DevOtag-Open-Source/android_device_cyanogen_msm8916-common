@@ -77,6 +77,10 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhwbinder
 
+# Charger animation
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # Disable psi monitors
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.use_psi=false
